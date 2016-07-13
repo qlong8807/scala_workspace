@@ -1,7 +1,7 @@
 package com.scala.collections
 
 /**
-  * Created by Administrator on 2016/7/8.
+  * list操作
   */
 object ListTest {
   def main(args: Array[String]) {
