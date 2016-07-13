@@ -1,0 +1,25 @@
+=   无返回值的函数可以不用=,代表返回值为Unit类似java中void
+匿名函数 使用 =>
+         scala> val fun = (x: Int) => x*x
+         fun: Int => Int = <function1>
+         scala> fun(3)
+         res27: Int = 9
+        使用{ }定义复杂的匿名函数
+         scala> var f = {x:Int =>
+              | println("hh")
+              | var temp = x*x
+              | temp+1
+              | }
+         f: Int => Int = <function1>
+         scala> f(3)
+         hh
+         res4: Int = 10
+reduceLeft、reduceRight(将集合进行函数计算，得到结果)
+        scala> (1 to 10) reduceLeft ((m: Int, n: Int) => m+n)
+        res42: Int = 55
+Option表示可能包含值的容器,有Some与None两个子类
+集合的fliter将符合条件的元素产生一个集合返回,partition将其分隔成满足与不满足条件的两元组
+
+
+
+
