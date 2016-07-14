@@ -18,7 +18,7 @@ reduceLeft、reduceRight(将集合进行函数计算，得到结果)
         scala> (1 to 10) reduceLeft ((m: Int, n: Int) => m+n)
         res42: Int = 55
 Option表示可能包含值的容器,有Some与None两个子类
-集合的fliter将符合条件的元素产生一个集合返回,partition将其分隔成满足与不满足条件的两元组
+集合的filter将符合条件的元素产生一个集合返回,partition将其分隔成满足与不满足条件的两元组
 
 
 
